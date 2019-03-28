@@ -45,7 +45,7 @@ int main () {
     printf("1. Jouer\n");
     printf("2. Aide\n");
     printf("3. Quitter\n");
-    printf("Que voulez-vous faire? \n");
+    printf("Que voulez-vous choisir ?\n");
     scanf("%d",&ChoixMenu);
 
     switch (ChoixMenu){
