@@ -1,7 +1,6 @@
 //Projet Bataille Navale MA-20 & ICT 431
 //Auteur: Gwenaël West
 //Mars 2019
-//Mars 2019
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -33,12 +32,11 @@ char grillejeu [LIGNES][COLONNES]= {
         {'-','-','-','-','-','-','-','-','-','-'},
         {'-','-','-','-','-','-','-','-','-','-'},
         {'-','-','-','-','-','-','-','-','-','-'},
-        };
+};
 
 
 int main () {
-    int ChoixMenu,Jouer, i, j;
-    int despe = 15;
+    int ChoixMenu;
     int Score = 0;
 
     printf("\nBienvenue, vous allez a present vivre une experience incroyable et revolutionnaire \n La Bataille Navale.\n");
@@ -50,19 +48,19 @@ int main () {
 
     switch (ChoixMenu){
         default:
-            //sesrahsaerhareh
-            printf("nique ta mere");
+            printf("essayer autre chose");
             exit(0);
 
         case 1:
             printf("Lancement de la partie\n\n");
             Score = JouerFonction(grillejeu,valeurgrille);
             system("cls");
+            printf("Victoire !!!!!\n");
             printf("vous avez gagne en %d coups.\n",Score);
             system("pause");
             break;
         case 2:
-            printf("AideAideAideAide");
+            printf("Le jeu de bataille navale a pour but d'eliminer tout les bateaux sur la carte");
             break;
 
         case 3:
