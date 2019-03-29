@@ -1,6 +1,6 @@
-//
-// Created by magwe on 28.03.2019.
-//
+//Projet Bataille Navale - Fonctions
+//Auteur: Gwenaël West
+//Mars 2019
 
 #ifndef NAVALBAATTTT_FONTIONS_H
 #define NAVALBAATTTT_FONTIONS_H
@@ -13,8 +13,8 @@ void AfficherTableau(char Tableau[10][10]){ //Fonction pour afficher la carte
 
     int ligne = 0; //utilisée pour la boucle for
     int colonne = 0;//utilisée pour la boucle for
-    int compteur = 0;//truc qui compte jusqu'a 10 pour afficher le chiffre à droite
-    printf("0 1 2 3 4 5 6 7 8 9\n"); //affiche la grille
+    int compteur = 0;//compteur qui compte jusqu'a 10 pour afficher les coordonnées a droite de la carte
+    printf("0 1 2 3 4 5 6 7 8 9\n"); //affiche les coordonnées au dessus de la grille
     for(ligne = 0;ligne < 10;ligne++) //boucle pour afficher la grille
     {
         for(colonne = 0;colonne < 10;colonne++)
@@ -30,8 +30,8 @@ void AfficherTableau(char Tableau[10][10]){ //Fonction pour afficher la carte
 }
 
 int JouerFonction(char Tableau[10][10],int Tableauchiffres[10][10]){ //Fonction pour jouer
-    system("cls");//nettoie l'écran
-    bool jeuactif = true; //Tant que c'êst actif , le jeu continue dee boucler
+    system("cls");//efface tout les éléments afficher pour plus de clarte en jeu
+    bool jeuactif = true; //Tant que c'êst actif , le jeu continue de boucler
     int choixhorizontal = 0; //choix tir joueur
     int choixvertical = 0; //choix tir joueur
     int NombreBateaux = 3;  
@@ -53,7 +53,7 @@ int JouerFonction(char Tableau[10][10],int Tableauchiffres[10][10]){ //Fonction 
 
         if(Tableauchiffres[choixhorizontal][choixvertical] == 0)
         {
-            printf("Nique ta mere tu sais pas viser CHEH\n");
+            printf("Oh non vous avez manque votre cible.. Reessayez \n");
             Tableau[choixhorizontal][choixvertical] = '~';
             Score++;
             system("pause");
@@ -67,7 +67,7 @@ int JouerFonction(char Tableau[10][10],int Tableauchiffres[10][10]){ //Fonction 
             Score++;
             if(PVBateau2 == 0)
             {
-                printf("Bateau 2 a nique sa maman\n");
+                printf("Bateau 2 est coule\n");
                 NombreBateaux--;
             }
             system("pause");
@@ -80,7 +80,7 @@ int JouerFonction(char Tableau[10][10],int Tableauchiffres[10][10]){ //Fonction 
             Score++;
             if(PVBateau3 == 0)
             {
-                printf("Bateau 2 a nique sa maman\n");
+                printf("Bateau 3 est coule\n");
                 NombreBateaux--;
             }
             system("pause");
@@ -93,7 +93,7 @@ int JouerFonction(char Tableau[10][10],int Tableauchiffres[10][10]){ //Fonction 
             Score++;
             if(PVBateau4 == 0)
             {
-                printf("Bateau 2 a nique sa maman\n");
+                printf("Bateau 4 est coule\n");
                 NombreBateaux--;
             }
             system("pause");
