@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Bataille_Navale/BatailleNavaleWest431/fontions.h
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+
+C:/Bataille_Navale/BatailleNavaleWest431/main.c
+stdio.h
+-
+stdlib.h
+-
+fontions.h
+C:/Bataille_Navale/BatailleNavaleWest431/fontions.h
+

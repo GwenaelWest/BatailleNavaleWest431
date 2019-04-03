@@ -64,7 +64,7 @@ int main () {
             break;
 
         case 3:
-            return 420;
+            return 3;
     }
 
 
