@@ -30,10 +30,10 @@ void AfficherTableau(char Tableau[10][10]){ //Fonction pour afficher la carte
 }
 
 int JouerFonction(char Tableau[10][10],int Tableauchiffres[10][10]){ //Fonction pour jouer
-    system("cls");//efface tout les éléments afficher pour plus de clarte en jeu
-    bool jeuactif = true; //Tant que c'êst actif , le jeu continue de boucler
-    int choixhorizontal = 0; //choix tir joueur
-    int choixvertical = 0; //choix tir joueur
+    system("cls");//efface tout les éléments affiché pour plus de clarté en jeu
+    bool jeuactif = true; //Tant que c'est actif , le jeu continue de faire la boucle
+    int choixhorizontal = 0; //choix tir joueur horizontal
+    int choixvertical = 0; //choix tir joueur vertical
     int NombreBateaux = 3;  
     int Score = 0; //nombre de tir
     int PVBateau2 = 2;
