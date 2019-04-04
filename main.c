@@ -39,12 +39,16 @@ int main () {
     int ChoixMenu;
     int Score = 0;
 
+    //-----------------------------------     Affichage du Menu Principal       -------------------------------------------------->>
+
     printf("\nBienvenue, vous allez a present vivre une experience incroyable et revolutionnaire \n La Bataille Navale.\n");
     printf("1. Jouer\n");
     printf("2. Aide\n");
     printf("3. Quitter\n");
     printf("Que voulez-vous choisir ?\n");
     scanf("%d",&ChoixMenu);
+
+    //-----------------------------------     Switch du menu pour le choix de l'utilisateur     ------------------------------------->>
 
     switch (ChoixMenu){
         default:
