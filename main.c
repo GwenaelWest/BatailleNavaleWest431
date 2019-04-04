@@ -60,7 +60,10 @@ int main () {
             system("pause");
             break;
         case 2:
-            printf("Le jeu de bataille navale a pour but d'eliminer tout les bateaux sur la carte");
+            printf("Le jeu de bataille navale a pour but d'eliminer tout les bateaux sur la carte. \n\n");
+            system("pause");
+            system("cls");
+            main();
             break;
 
         case 3:
