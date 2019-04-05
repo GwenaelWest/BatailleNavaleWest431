@@ -71,7 +71,7 @@ int main () {
             printf("Si le bateau de votre opposant se trouve a cette position alors il est touche\n");
             printf("Pour couler le navire, il faut le toucher entièrement.\n"
                    " C'est a dire qu'un bateau prenant 4 cases doit etre atteint en ses 4 cases pour être coule.\n");
-            printf("Vous gagnez quand vous faites chavirer tous les navires ennemi.\n");
+            printf("Vous gagnez quand vous faites chavirer tous les navires ennemi.\n\n");
             system("pause");
             system("cls");
             main();
