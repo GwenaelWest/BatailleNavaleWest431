@@ -64,7 +64,14 @@ int main () {
             system("pause");
             break;
         case 2:
-            printf("Le jeu de bataille navale a pour but d'eliminer tout les bateaux sur la carte. \n\n");
+            system("cls");
+            printf("Le but du jeu est de couler tous les bateaux de l'adversaire.\n\n");
+            printf("Pour cela, vous devez essayer de tirer sur ses navires en devinant leurs positions.\n");
+            printf("Pour tirer, il faut citer les coordonnees d'un emplacement dans la grille. \n");
+            printf("Si le bateau de votre opposant se trouve a cette position alors il est touche\n");
+            printf("Pour couler le navire, il faut le toucher entièrement.\n"
+                   " C'est a dire qu'un bateau prenant 4 cases doit etre atteint en ses 4 cases pour être coule.\n");
+            printf("Vous gagnez quand vous faites chavirer tous les navires ennemi.\n");
             system("pause");
             system("cls");
             main();
